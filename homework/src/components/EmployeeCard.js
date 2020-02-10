@@ -1,5 +1,8 @@
+import React from "react";
 
+function EmployeeCard (props){
 
+    return (
 <div className="card mb-3" style="max-width: 540px;">
   <div className="row no-gutters">
     <div className="col-md-4">
@@ -13,4 +16,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> );
+}
+
+export default EmployeeCard;
