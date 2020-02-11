@@ -44,15 +44,15 @@ class Container extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search by last name."}
+      
             >
-              {this.state.result.Title ? (
+              {this.state.result.name ? (
                 <MovieDetail
-                  title={this.state.result.Title}
-                  src={this.state.result.Poster}
-                  director={this.state.result.Director}
-                  genre={this.state.result.Genre}
-                  released={this.state.result.Released}
+                  Firstname={this.state.result.name.first}
+                  LastName={this.state.result.name.last}
+                  City={this.state.result.location.city}
+                  email={this.state.result.email}
+                  id={this.state.result.login.salt}
                 />
               ) : (
                 <h3>No Results to Display</h3>
